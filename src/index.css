@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely);
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +7,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  cursor: none;
+  color: white;
+  font-family: Bely;
+  font-weight: 400;
+  font-style: normal;
+               
 }
 
 code {

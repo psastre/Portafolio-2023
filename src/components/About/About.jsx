@@ -1,0 +1,81 @@
+import React from 'react'
+import './About.scss'
+import halfofquarter from './images/halfofquarter.svg'
+import quarter from './images/quarter.svg'
+import idontknow from './images/idontknow.svg'
+import half from './images/half.svg'
+import halfandquarter from './images/halfandquarter.svg'
+
+function About() {
+  return (
+    <div className='about_container'>
+        <div className="about_likes"></div>
+        <div className="about_skills">
+            
+            <div className="skills_container skills_first">
+                <div className="skills_content">
+                    <span>
+                    HTML <img className="skills_clock"src={halfandquarter}/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    CSS <img className="skills_clock"src={halfandquarter}/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    Javascript <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    Figma <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    
+                    </span>
+                </div>
+                <div className="skills_content skills_content_second">
+                    <span>
+                    HTML <img className="skills_clock"src={halfandquarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    CSS <img className="skills_clock"src={halfandquarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Javascript <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Figma <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </div>
+            </div>
+
+            <div className="skills_container skills_second">
+                <div className="skills_content">
+                    <span className='skills_span_middle'>
+                    PHP <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Laravel <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    SQL <img className="skills_clock"src={idontknow}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    React <img className="skills_clock"src={idontknow}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    API <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </div>
+                <div className="skills_content skills_content_second ">
+                    <span className='skills_span_middle'>
+                    PHP <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Laravel <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    SQL <img className="skills_clock"src={idontknow}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    React <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    API <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </div>
+            </div>
+
+            <div className="skills_container skills_third">
+                <div className="skills_content">
+                    <span>
+                    GSAP <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Framer <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Three.js <img className="skills_clock"src={idontknow}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Chart.js <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    </span>
+                </div>
+                <div className="skills_content skills_content_second">
+                    <span>
+                    GSAP <img className="skills_clock"src={half}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Framer <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Three.js <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Chart.js <img className="skills_clock"src={quarter}/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  )
+}
+
+export default About

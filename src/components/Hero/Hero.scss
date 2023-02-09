@@ -1,0 +1,52 @@
+@import url(//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely);
+
+.hero_container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    .hero_text_container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hero_title{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+                color: white;
+                font-family: Bely;
+                font-weight: 400;
+                font-style: normal;
+                font-size: min(7.2rem,80px);
+            }
+        }
+        .hero_logo{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: rgba($color: white, $alpha: 0);
+            border-radius: 50%;
+            animation: logoAnimationCircule 16s infinite;
+            backdrop-filter: invert(1);
+            
+            top: 10px;
+            left: 10%;
+            width: 50px;
+            height: 50px;
+            z-index: 99999;
+        }
+        
+
+    }
+}
+
+
+
+@keyframes logoAnimationCircule {
+    from {transform: rotate3d(0, 1, 0, 0rad);}
+    to {transform: rotate3d(0, 1, 0, -6.284rad);
+        }
+  }
