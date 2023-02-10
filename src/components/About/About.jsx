@@ -1,5 +1,7 @@
-import React from 'react'
+import {useEffect} from 'react'
 import './About.scss'
+
+import About_ThreeDModels from './About_ThreeDModels'
 import halfofquarter from './images/halfofquarter.svg'
 import quarter from './images/quarter.svg'
 import idontknow from './images/idontknow.svg'
@@ -7,9 +9,18 @@ import half from './images/half.svg'
 import halfandquarter from './images/halfandquarter.svg'
 
 function About() {
+
+    useEffect(()=>{
+        About_ThreeDModels();
+    },[]);
   return (
     <div className='about_container'>
-        <div className="about_likes"></div>
+        <div className="about_likes">
+            <canvas className='bike_3d element_3d'></canvas>
+            <canvas className='computer_3d element_3d'></canvas>
+            <canvas className='dj_3d element_3d'></canvas>
+            <canvas className='joystick_3d element_3d'></canvas>
+        </div>
         <div className="about_skills">
             
             <div className="skills_container skills_first">

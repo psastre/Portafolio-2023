@@ -1,0 +1,11 @@
+Model Information:
+* title:	Realistic Old Bike Model
+* source:	https://sketchfab.com/3d-models/realistic-old-bike-model-5a037f059aa140cd89ce46f811e06563
+* author:	Morgan.J (https://sketchfab.com/MorganJ45)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Realistic Old Bike Model" (https://sketchfab.com/3d-models/realistic-old-bike-model-5a037f059aa140cd89ce46f811e06563) by Morgan.J (https://sketchfab.com/MorganJ45) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

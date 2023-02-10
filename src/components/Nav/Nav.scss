@@ -21,6 +21,7 @@
         width: 90%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         border-bottom: 3px solid white;
         
 
@@ -36,13 +37,13 @@
     }
 }
 .nav_right_container{
-    width: 50%;
+    width: 40%;
 
 
     ul{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         
         a{
             text-decoration: none;
@@ -54,6 +55,14 @@
             li{
                 color: aliceblue;
                 list-style: none;
+            }
+
+            .crossline_about{
+                width: 0px;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                transform: translateY(-10px);
             }
         }
         a:hover{

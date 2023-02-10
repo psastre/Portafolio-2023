@@ -44,3 +44,22 @@
   filter: invert(70%);
   border-radius: 50%;
 }
+
+.hero_logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  filter: invert(1);
+  backdrop-filter: invert(1);
+  background-image: url("./components/Nav/logo.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+
+}
+
+.webgl{
+  position: absolute;
+  top:0;
+  left: 0;
+}

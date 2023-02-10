@@ -11,14 +11,14 @@ function Nav({setcursorscaling}) {
         <div className="blur_container"></div>
         <div className="nav_middle_container">
           <div className="nav_left_container">
-            
+            <div className="hero_logo"></div>
           </div>
           <div className="nav_right_container">
             <ul>
                 <a href="" 
                 onMouseEnter={()=>{setcursorscaling(true); setprojectshover(true); setcontacthover(true)}} 
                 onMouseLeave={()=>{setcursorscaling(false); setprojectshover(false); setcontacthover(false)}}
-                style={{filter:abouthover ? "blur(2px)" :"blur(0px)" , transform: abouthover ? "scale(0.9)" :"scale(1)"}}><li>About</li></a>
+                style={{filter:abouthover ? "blur(2px)" :"blur(0px)" , transform: abouthover ? "scale(0.9)" :"scale(1)"}}><li>About</li><div className="crossline_about"></div></a>
                 <a href="" 
                 onMouseEnter={()=>{setcursorscaling(true); setabouthover(true); setcontacthover(true)}}
                 onMouseLeave={()=>{setcursorscaling(false); setabouthover(false); setcontacthover(false)}} 
