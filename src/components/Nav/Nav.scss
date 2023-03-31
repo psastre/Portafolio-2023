@@ -64,6 +64,20 @@
                 position: absolute;
                 transform: translateY(-10px);
             }
+            .crossline_projects{
+                width: 0px;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                transform: translateY(-10px);
+            }
+            .crossline_contact{
+                width: 0px;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                transform: translateY(-10px);
+            }
         }
         a:hover{
             transform: scale(1.2);

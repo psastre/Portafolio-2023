@@ -7,8 +7,12 @@ export default function ThreeDModels() {
     const scene = new THREE.Scene();
 
     const geometry = new THREE.SphereGeometry(3,64,64);
-    const material = new THREE.MeshStandardMaterial({
+    const material = new THREE.MeshPhysicalMaterial({
         color:'#f0f8ff',
+        clearcoat:2.0,
+        wireframe: true,
+        clearcoatRoughness:0.5,
+        envMap: 'reflection',
     })
      
     const mesh = new THREE.Mesh(geometry, material);
@@ -38,7 +42,7 @@ export default function ThreeDModels() {
    
     //LIGHT
 
-    const light = new THREE.PointLight(0xffffff, 1.5, 500)
+    const light = new THREE.PointLight(0xffffff, 1.5, 1500)
     light.position.set(20 ,0 ,10)
     scene.add(light)
    
@@ -57,7 +61,7 @@ export default function ThreeDModels() {
 
     const canvas = document.querySelector('.webgl');
     const renderer = new THREE.WebGLRenderer({canvas})
-    renderer.setSize(sizes.width, sizes.height)
+    renderer.setSize(sizes.width -20, sizes.height -20)
     renderer.render(scene,camera)
 
     //Controls

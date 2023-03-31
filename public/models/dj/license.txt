@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pioneer Cdj 3000
+* source:	https://sketchfab.com/3d-models/pioneer-cdj-3000-7a33aaa799044e0db082f3b2b038c328
+* author:	MaxTht (https://sketchfab.com/thetiot.maxime)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pioneer Cdj 3000" (https://sketchfab.com/3d-models/pioneer-cdj-3000-7a33aaa799044e0db082f3b2b038c328) by MaxTht (https://sketchfab.com/thetiot.maxime) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

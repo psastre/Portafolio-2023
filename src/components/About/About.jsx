@@ -2,6 +2,9 @@ import {useEffect} from 'react'
 import './About.scss'
 
 import About_ThreeDModels from './About_ThreeDModels'
+import About_ThreeDModelJoystick from './About_ThreeDModelJoystick'
+import About_ThreeDModelDJ from './About_ThreeDModelDJ'
+import About_ThreeDModelComputer from './About_ThreeDModelComputer'
 import halfofquarter from './images/halfofquarter.svg'
 import quarter from './images/quarter.svg'
 import idontknow from './images/idontknow.svg'
@@ -12,6 +15,9 @@ function About() {
 
     useEffect(()=>{
         About_ThreeDModels();
+        About_ThreeDModelJoystick();
+        About_ThreeDModelDJ();
+        About_ThreeDModelComputer();
     },[]);
   return (
     <div className='about_container'>

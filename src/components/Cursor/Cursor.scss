@@ -1,5 +1,6 @@
 .big_circle{
-    width: 60px;height: 60px;
+    width: 60px;
+    height: 60px;
     filter: blur(8px);
    
     border: 2.5px solid white;
@@ -10,12 +11,25 @@
     z-index: 999;
 }
 .small_circle{
-    width: 20px;height: 20px;
+    width: 20px;
+    height: 20px;
     backdrop-filter: invert(1);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
     z-index: 999;
+    
+
+}
+.small_circle.formtext{
+    width: 3px;
+    height: 20px;
+    backdrop-filter: invert(1);
+    border-radius: 5%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    
     
 
 }

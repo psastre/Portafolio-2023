@@ -22,11 +22,11 @@ function Nav({setcursorscaling}) {
                 <a href="" 
                 onMouseEnter={()=>{setcursorscaling(true); setabouthover(true); setcontacthover(true)}}
                 onMouseLeave={()=>{setcursorscaling(false); setabouthover(false); setcontacthover(false)}} 
-                style={{filter: projectshover ? "blur(2px)" :"blur(0px)", transform: projectshover ? "scale(0.9)" :"scale(1)"}}><li>Projects</li></a>
+                style={{filter: projectshover ? "blur(2px)" :"blur(0px)", transform: projectshover ? "scale(0.9)" :"scale(1)"}}><li>Projects</li><div className="crossline_projects"></div></a>
                 <a href="" 
                 onMouseEnter={()=>{setcursorscaling(true); setabouthover(true); setprojectshover(true)}} 
                 onMouseLeave={()=>{setcursorscaling(false); setabouthover(false); setprojectshover(false)}} 
-                style={{filter: contacthover ? "blur(2px)" :"blur(0px)" , transform: contacthover ? "scale(0.9)" :"scale(1)"}}><li>Contact</li></a>
+                style={{filter: contacthover ? "blur(2px)" :"blur(0px)" , transform: contacthover ? "scale(0.9)" :"scale(1)"}}><li>Contact</li><div className="crossline_contact"></div></a>
                 
             </ul>
           </div>

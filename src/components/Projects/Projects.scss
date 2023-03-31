@@ -1,0 +1,103 @@
+.projects_container{
+    height: 250vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects_grid{
+    width: 90%;
+    height: 90%;
+    margin-top: 10vh;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.projects_block{
+    width: 50%;
+    height: 20%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    
+    
+    
+
+}
+.projects_left{
+    justify-content: left; 
+}
+.projects_right{
+    justify-content: right; 
+}
+
+.first_project.projects_left{
+    text-align: left;
+    
+
+}
+.first_project.projects_right{
+    background-image: url("./images/brassai.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.first_project.projects_right:hover{
+    background-image: url("./images/brassai.gif");
+  
+
+}
+
+.second_project.projects_right{
+    p{
+    text-align: right;
+    width: 70%;
+    }
+}
+
+.second_project.projects_left{
+    background-image: url("./images/pokemon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 50%;
+}
+.second_project.projects_left:hover{
+    background-image: url("./images/pokemon.gif");
+   
+}
+.third_project.projects_right{
+    background-image: url("./images/portafolio2022.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.third_project.projects_right:hover{
+    background-image: url("./images/portafolio2022.gif");
+   
+}
+.fourth_project.projects_left{
+    background-image: url("./images/soluciones.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.fourth_project.projects_left:hover{
+    background-image: url("./images/soluciones.gif");
+   
+}
+
