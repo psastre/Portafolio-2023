@@ -20,7 +20,8 @@ function About() {
         About_ThreeDModelComputer();
     },[]);
   return (
-    <div className='about_container'>
+    <div className='about_container' id="about">
+        <h3>About</h3>
         <div className="about_likes">
             <canvas className='bike_3d element_3d'></canvas>
             <canvas className='computer_3d element_3d'></canvas>
@@ -91,6 +92,7 @@ function About() {
             </div>
 
         </div>
+        <h3>Projects</h3>
     </div>
   )
 }

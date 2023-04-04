@@ -5,6 +5,7 @@
     .about_likes{
         height: 50%;
         background-color: rgb(0, 0, 0);
+       
 
         .element_3d{
             
@@ -14,11 +15,7 @@
             border: 1px solid black;
            
         }
-        .bike_3d{
-            width: 24%;
-            height: 100%;
-    
-        }
+        
     }
     .about_skills{
         height: 50%;
@@ -99,4 +96,41 @@
     100%{
         transform: translate(100%,0);
     }
+}
+
+@media screen and (max-width:600px){
+    .about_container{
+    .about_likes{
+        height: 50%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+
+        .element_3d{
+            
+            width: 50%;
+            height: 50%;
+            
+            border: 1px solid black;
+           
+        }
+        
+    }
+    .about_skills{
+        .skills_container{
+            .skills_content{
+                span{
+                    font-size: 34px;
+
+                    .skills_clock {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                
+            }
+        }
+
+    }
+}
 }

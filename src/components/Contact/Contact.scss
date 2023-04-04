@@ -86,7 +86,6 @@ form button:hover{
 .social_media{
     height: 30%;
     width: 100%;
-    border: 1px white solid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,3 +139,36 @@ form button:hover{
     color: white;
 }
 
+
+@media screen and (max-width:600px){
+    .contact_container {
+        width: 100%;
+        height: 90vh;
+        margin-top: 0vh;
+    }
+    .contact_options_section{
+        flex-direction: column;
+
+        .contact_right{
+            height: 40%;
+        }
+        .contact_left{
+            height: 60%;
+        }
+    }
+    .contact_option {
+        width: 100%;
+        
+
+        form{
+            height: 70%;
+        }
+
+        .social_media{
+            height: 40%;
+        }
+        .btn_copy_mail{
+            height: 20%;
+        }
+    }
+}

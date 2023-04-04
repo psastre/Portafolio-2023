@@ -9,6 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const loader = new GLTFLoader();
 
 export default function About_ThreeDModelJoystick() {
+
+    const sizes = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    }
+
     gsap.registerPlugin(ScrollTrigger)
     const canvas = document.querySelector('.joystick_3d');
 
@@ -49,7 +55,14 @@ export default function About_ThreeDModelJoystick() {
     }
  
    
-    document.addEventListener('mousemove', onMouseMove, false);
+    if (sizes.width < 650) { 
+             hlight.position.set( -1, 1, 3 );
+            scene.add(hlight)
+                
+            }else{
+                document.addEventListener('mousemove', onMouseMove, false);
+            }
+    
 
         scene.add(hlight)
     

@@ -9,6 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const loader = new GLTFLoader();
 
 export default function About_ThreeDModelDJ() {
+    
+    const sizes = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    }
+
     gsap.registerPlugin(ScrollTrigger)
     const canvas = document.querySelector('.dj_3d');
 
@@ -26,7 +32,7 @@ export default function About_ThreeDModelDJ() {
    
 
    
-    let hlight = new THREE.PointLight(0xffffff,2, 120)
+    let hlight = new THREE.PointLight(0xffffff,2, 180)
     let llight = new THREE.PointLight(0xffffff,2, 20)
     let alight = new THREE.AmbientLight(0xffffff,0.8 )
     //hlight.position.set( -2, 2, 0 );
@@ -50,7 +56,14 @@ export default function About_ThreeDModelDJ() {
     }
  
    
-    document.addEventListener('mousemove', onMouseMove, false);
+    if (sizes.width < 650) { 
+             hlight.position.set( 1, 1, 3 );
+            scene.add(hlight)
+                
+            }else{
+                document.addEventListener('mousemove', onMouseMove, false);
+            }
+    
 
         scene.add(hlight)
     

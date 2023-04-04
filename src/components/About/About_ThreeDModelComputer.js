@@ -9,6 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const loader = new GLTFLoader();
 
 export default function About_ThreeDModelComputer() {
+
+    const sizes = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    }
+
     gsap.registerPlugin(ScrollTrigger)
     const canvas = document.querySelector('.computer_3d');
 
@@ -28,9 +34,9 @@ export default function About_ThreeDModelComputer() {
     let hlight = new THREE.PointLight(0xffffff,2, 120)
     let llight = new THREE.PointLight(0xffffff,2, 20)
     let alight = new THREE.AmbientLight(0xffffff,0.8 )
-    //hlight.position.set( -2, 2, 0 );
+    //
     llight.position.set( -20, -10, 0 );
-   // scene.add(hlight)
+   // 
     scene.add(alight)
     scene.add(llight)
 
@@ -48,8 +54,14 @@ export default function About_ThreeDModelComputer() {
         hlight.position.set( mouse.x, mouse.y, 0.5 );
     }
  
-   
-    document.addEventListener('mousemove', onMouseMove, false);
+     if (sizes.width < 650) { 
+             hlight.position.set( -1, 1, 3 );
+            scene.add(hlight)
+                
+            }else{
+                document.addEventListener('mousemove', onMouseMove, false);
+            }
+    
 
         scene.add(hlight)
     

@@ -33,3 +33,9 @@
     
 
 }
+
+@media screen and (max-width:600px){
+    .big_circle,.small_circle,.small_circle.formtext{
+        display: none;
+    }
+}

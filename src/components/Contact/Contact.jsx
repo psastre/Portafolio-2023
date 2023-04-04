@@ -13,7 +13,7 @@ const Contact = () => {
     document.querySelector(".btn_copy_mail").textContent='Copied, I look forward to hearing from you ';
   }
   return (
-    <div className="contact_container">
+    <div className="contact_container" id="contact">
         <h3>Contact me</h3>
         <div className="contact_options_section">
             <div className="contact_option contact_left">
@@ -35,6 +35,7 @@ const Contact = () => {
             </div>
 
             <div className="contact_option contact_right">
+                <iframe src="https://twitter.com/pedronason" frameborder="0"></iframe>
                 
             </div>
         </div>

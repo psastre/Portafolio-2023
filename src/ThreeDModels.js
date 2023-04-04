@@ -1,7 +1,12 @@
 import * as THREE from 'three';
+import gsap from 'gsap'; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 
 export default function ThreeDModels() {
+
+    gsap.registerPlugin(ScrollTrigger)
+    
     
   
     const scene = new THREE.Scene();
@@ -43,16 +48,29 @@ export default function ThreeDModels() {
     //LIGHT
 
     const light = new THREE.PointLight(0xffffff, 1.5, 1500)
-    light.position.set(20 ,0 ,10)
+    light.position.set(10 ,0 ,5)
     scene.add(light)
-   
+
+    
+    
     
 
     //CAMERA
+    
 
     const camera = new THREE.PerspectiveCamera(45, sizes.width/ sizes.height);
-    camera.position.z = 15;
-    camera.position.y = 0;
+
+    
+            if (sizes.width < 650) { 
+                    camera.position.z = 16;
+                    camera.position.y = 0.3;
+                
+            }else{
+                 camera.position.z = 15;
+                 camera.position.y = 0;
+            }
+   
+    
     scene.add(camera)
 
     
@@ -104,7 +122,30 @@ export default function ThreeDModels() {
       
         light.position.set(pos.x, pos.y, pos.z - 1);
       };
-      document.addEventListener('mousemove', onMouseMove, false);
+
+        if (sizes.width < 650) { 
+
+            gsap.to(light.position, {
+                x: '-10',
+                
+                scrollTrigger: {
+                    trigger: '.about_container',
+                    start: 'start bottom',
+                    end: 'bottom bottom',
+                    scrub:true,
+                    
+                  }
+              }, 
+            )  
+        
+   
+        }else{
+            document.addEventListener('mousemove', onMouseMove, false);
+        }
+
+      
+
+     
 
     const loop =()=>{
         

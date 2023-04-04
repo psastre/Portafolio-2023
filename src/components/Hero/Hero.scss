@@ -53,3 +53,24 @@
     to {transform: rotate3d(0, 1, 0, -6.284rad);
         }
   }
+
+
+  @media screen and (max-width:600px){
+
+    .hero_container{
+       
+    .hero_text_container{
+       
+        .hero_title{
+           
+            h2{
+                color: white;
+                font-family: Bely;
+                font-weight: 400;
+                font-style: normal;
+                font-size: min(5.2rem,50px);
+            }
+        }
+    }
+}
+  }
